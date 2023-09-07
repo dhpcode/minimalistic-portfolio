@@ -38,7 +38,50 @@
   <!-- MAIN-CONTENT -->
 
   <main class="main-content">
-    <div class="container">
+
+    <!-- HERO -->
+
+    <div class="hero">
+      <div class="container">
+        <div class="hero__container">
+          <picture class="hero-picture">
+            <source
+              srcset="images/homepage/desktop/image-homepage-hero.jpg 1x, images/homepage/desktop/image-homepage-hero@2x.jpg 2x"
+              media="(min-width:1024px)">
+            <source
+              srcset="images/homepage/tablet/image-homepage-hero.jpg 1x, images/homepage/tablet/image-homepage-hero@2x.jpg 2x"
+              media="(min-width:500px)">
+            <img class="hero-img" src="images/homepage/mobile/image-homepage-hero.jpg" alt="Hero img" width="311"
+              height="271"
+              srcset="images/homepage/mobile/image-homepage-hero.jpg 1x, images/homepage/mobile/image-homepage-hero@2x.jpg 2x">
+          </picture>
+          <div class="hero__text-wrapper">
+            <h1 class="hero-title">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <a href="#" class="cta-button">
+              <span class="cta-button__inner">
+                <span class="cta-button__append">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+                    <g fill="none" fill-rule="evenodd" stroke="currentColor">
+                      <path d="m0 9 8 4 8-4" />
+                      <path d="m0 5 8 4 8-4" opacity=".5" />
+                      <path d="m0 1 8 4 8-4" opacity=".25" />
+                    </g>
+                  </svg>
+                </span>
+                <span class="cta-button__text">About me</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div class="container">
       <a href="#" class="cta-button">
         <span class="cta-button__inner">
           <span class="cta-button__append">
@@ -51,7 +94,7 @@
       <hr>
       <a class="button" href="">Go to portfolio</a>
       <button class="button" type="button">View project</button>
-    </div>
+    </div> -->
   </main>
 
   <!-- FOOTER -->
