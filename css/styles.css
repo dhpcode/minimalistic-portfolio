@@ -309,6 +309,7 @@ select:-webkit-autofill:focus {
   border: 1px solid var(--grayish-dark-blue);
   color: var(--grayish-dark-blue);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -354,6 +355,7 @@ select:-webkit-autofill:focus {
   line-height: 42px;
   /* 105% */
   letter-spacing: -0.357px;
+  text-transform: capitalize;
 }
 
 .img-text-info__text {
@@ -449,6 +451,32 @@ select:-webkit-autofill:focus {
   font-size: 40px;
   font-style: normal;
   line-height: 1.05;
+  letter-spacing: -0.357px;
+}
+
+/* CONTACT-CTA */
+
+.contact-cta {
+  padding-top: 115px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.contact-cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-cta__heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-style: normal;
+  line-height: 42px;
+  /* 105% */
   letter-spacing: -0.357px;
 }
 
@@ -550,7 +578,7 @@ only screen and (min-resolution: 2dppx) {}
   .img-text-info__info {
     width: 60%;
   }
-  
+
   .img-text-info--index-about-me .img-text-info__img {
     height: 100%;
     object-fit: cover;
@@ -680,6 +708,35 @@ only screen and (min-resolution: 2dppx) {}
     padding-top: 50px;
     padding-bottom: 46px;
   }
+
+  .contact-cta {
+    padding: 96px 0;
+  }
+
+  .contact-cta__container {
+    flex-direction: row;
+  }
+
+  .contact-cta__container::before {
+    content: "";
+    width: 113px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.15;
+    background: var(--grayish-dark-blue);
+    margin: 0 32px;
+    flex-grow: 1;
+  }
+
+  .contact-cta__heading {
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+    order: -1;
+  }
+
+
+
 }
 
 /* 1024 */
@@ -727,7 +784,7 @@ only screen and (min-resolution: 2dppx) {}
     width: 540px;
     height: 500px;
   }
-  
+
   .img-text-info__info {
     flex-grow: 0;
     padding-top: 103px;
@@ -743,4 +800,9 @@ only screen and (min-resolution: 2dppx) {}
     font-size: 16px;
     line-height: 30px;
   }
+
+  .contact-cta {
+    padding: 150px 0;
+  }
+
 }
