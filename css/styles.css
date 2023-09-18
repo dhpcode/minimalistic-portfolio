@@ -626,6 +626,7 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
   text-decoration: none;
   display: grid;
+  width: 50%;
 }
 
 .page-controls__link:hover {
@@ -653,6 +654,7 @@ select:-webkit-autofill:focus {
   text-transform: capitalize;
   order: 1;
   color: rgba(51, 50, 61, 0.5);
+  white-space: nowrap;
 }
 
 .page-controls__title {
@@ -805,7 +807,7 @@ select:-webkit-autofill:focus {
 }
 
 .socials__link:hover {
-  opacity: 0.8;
+  color: var(--green);
 }
 
 .socials__link:active {
@@ -814,7 +816,10 @@ select:-webkit-autofill:focus {
 
 .socials--dark .socials__link {
   color: var(--grayish-dark-blue);
+}
 
+.socials--dark .socials__link:hover {
+  color: var(--green);
 }
 
 .socials__icon {
