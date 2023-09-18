@@ -700,6 +700,11 @@ select:-webkit-autofill:focus {
   color: #fff;
 }
 
+.socials--dark .socials__link {
+  color: var(--grayish-dark-blue);
+  
+}
+
 .socials__icon {
   display: block;
 }
